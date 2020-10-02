@@ -1,0 +1,79 @@
+/*GLOBAL STYLES*/
+:root {
+  --color-orange: #F6A64D;
+  --color-green: #8BA73B;
+  --color-highlight: rgb(139,167,59);
+  --color-text: #626262;
+  --color-border: #edecec;
+  --color-backcolor-icon: #f2f4ec;
+  --border: .1rem solid var(--color-border)
+}
+.highlight-text {
+  color: var(--color-highlight);
+}
+
+/*END GLOBAL STYLES*/
+
+.about-us__story__container {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .about-us__story {
+    width: 32%;
+    background-color: #fff;
+
+    .story__img {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .story__content {
+      width: 100%;
+      padding: 0 4rem;
+
+      .story__content--title {
+        font-size: 1.4rem;
+        margin-top: 2.5rem;
+
+        h2 {
+          text-align: center;
+        }
+      }
+
+      .story__content--paragraph {
+        font-size: 1.4rem;
+        margin-top: 2.5rem;
+
+        p {
+          text-align: center;
+          color: var(--color-text);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-us__story__container {
+
+    .about-us__story {
+
+      .story__content {
+
+        .story__content--title {
+          font-size: 1.18rem;
+
+          h2 {
+
+          }
+        }
+      }
+    }
+  }
+}

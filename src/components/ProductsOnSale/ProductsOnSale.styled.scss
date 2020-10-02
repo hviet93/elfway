@@ -1,0 +1,76 @@
+/*======GLOBAL STYLE========*/
+:root {
+  --color-orange: #F6A64D;
+  --color-green: #8BA73B;
+  --color-highlight: rgb(139,167,59);
+  --color-text: #626262;
+  --color-border: #edecec;
+  --color-backcolor-icon: #f2f4ec;
+  --border: .1rem solid var(--color-border)
+}
+.highlight-text {
+  color: var(--color-highlight);
+}
+/*======END GLOBAL STYLE========*/
+.products__on-sale__container {
+  width: 100%;
+  padding: 2rem;
+  background-color: #fff;
+  margin-bottom: 2rem;
+
+  .products__on-sale__header {
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+  }
+
+  .products__on-sale__body {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .products__on-sale__img {
+      width: 30%;
+
+      img {
+        width: 100%;
+      }
+    }
+    .products__on-sale__info {
+      width: 60%;
+      margin-left: 2rem;
+
+      .products__on-sale__info--title {
+        font-size: 1.2rem;
+
+        a {
+          text-decoration: none;
+          color: #000;
+          transition: .4s;
+        }
+
+        a:hover {
+          color: var(--color-highlight);
+          transition: .4s;
+        }
+      }
+
+      .products__on-sale__info--price {
+        font-size: 1.3rem;
+        font-weight: bold;
+
+        span {
+          margin-right: 1rem;
+        }
+
+        .product__original-price {
+          text-decoration: line-through;
+          color: var(--color-text);
+        }
+      }
+    }
+  }
+}

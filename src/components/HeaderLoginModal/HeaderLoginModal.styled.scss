@@ -1,0 +1,139 @@
+/*======GLOBAL STYLE========*/
+:root {
+  --color-orange: #F6A64D;
+  --color-green: #8BA73B;
+  --color-highlight: rgb(139,167,59);
+  --color-text: #626262;
+  --color-border: #edecec;
+  --color-backcolor-icon: #f2f4ec;
+  --border: .1rem solid var(--color-border)
+}
+.highlight-text {
+  color: var(--color-highlight);
+}
+
+.required {
+  color: red;
+}
+
+.login-modal-label {
+
+}
+
+.login-modal-input {
+
+}
+
+/*======END GLOBAL STYLE========*/
+
+.header__login-modal__container {
+  //height: 100%;
+  display: none;
+
+  .login__modal__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .2;
+  }
+
+  .login__modal {
+    background-color: #fff;
+    width: 45%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 1rem 1.5rem;
+
+    .login__modal__close {
+      width: 100%;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: flex-end;
+
+      span {
+        cursor: pointer;
+        font-size: 1.6rem;
+        color: var(--color-highlight);
+      }
+    }
+
+    .login__modal__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #000;
+
+      h2 {
+
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: var(--color-highlight);
+      }
+    }
+
+    .login__modal__body {
+      width: 100%;
+      padding: 1rem 0;
+      margin-bottom: 1rem;
+
+      .login__modal__form {
+        width: 100%;
+
+        .login__modal__username {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+
+        .login__modal__password {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+
+        .login__modal__action {
+          width: 100%;
+
+          button {
+            cursor: pointer;
+            width: 100%;
+            background-color: var(--color-highlight);
+            color: #fff;
+            border: none;
+            font-weight: bold;
+            padding: 1.5rem 0;
+            border-radius: 5rem;
+          }
+        }
+      }
+    }
+
+    .login__modal__footer {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: var(--color-highlight);
+      }
+    }
+  }
+}
+
+.header__login-modal__container--display {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

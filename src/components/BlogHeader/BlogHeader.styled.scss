@@ -1,0 +1,38 @@
+/*GLOBAL STYLES*/
+:root {
+  --color-oraBnge: #F6A64D;
+  --color-green: #8BA73B;
+  --color-highlight: rgb(139, 167, 59);
+  --color-text: #626262;
+  --color-border: #edecec;
+  --color-backcolor-icon: #f2f4ec;
+  --border: .1rem solid var(--color-border)
+}
+
+.highlight-text {
+  color: var(--color-highlight);
+}
+
+/*END GLOBAL STYLES*/
+
+.blog__header__container {
+  margin-top: 1rem;
+  width: 100%;
+  padding: .5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .blog__header--item {
+    font-size: 1.4rem;
+    padding: .3rem 2.5rem;
+    background-color: #fff;
+    margin-right: 1.5rem;
+    border-radius: 2rem;
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+/*GLOBAL STYLE*/
+:root {
+  --color-orange: #F6A64D;
+  --color-green: #8BA73B;
+  --color-highlight: rgb(139,167,59);
+  --color-text: #626262;
+  --color-border: #edecec;
+  --color-backcolor-icon: #f2f4ec;
+  --border: .1rem solid var(--color-border)
+}
+.highlight-text {
+  color: var(--color-highlight);
+}
+/*END GLOBAL STYLE*/
+
+.checkout__container {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  .checkout__table {
+    width: 100%;
+
+    .checkout__header {
+      width: 100%;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    .checkout__product-detail {
+      td {
+        font-size: 1.4rem;
+      }
+
+      .product__detail-price, .product__detail-quantity, .product__detail-unit-total-price {
+        text-align: right;
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+/*GLOBAL STYLES*/
+:root {
+  --color-oraBnge: #F6A64D;
+  --color-green: #8BA73B;
+  --color-highlight: rgb(139, 167, 59);
+  --color-text: #626262;
+  --color-border: #edecec;
+  --color-backcolor-icon: #f2f4ec;
+  --border: .1rem solid var(--color-border)
+}
+
+.highlight-text {
+  color: var(--color-highlight);
+}
+
+/*END GLOBAL STYLES*/
+
+.blog__article-detail__container {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+
+  .blog__article-detail__header {
+    width: 100%;
+
+    .article-detail__header__img {
+      width: 100%;
+      margin-bottom: 2rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .article-detail__header__title {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      padding: 0 2.5rem;
+    }
+
+    .article-detail__header__date {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      padding: 0 2.5rem;
+
+      span {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .blog__article-detail__body {
+    width: 100%;
+    padding: 0 2.5rem;
+    color: var(--color-text);
+
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-detail__body__mid {
+      width: 100%;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .article-detail__body__mid--img {
+        width: 28%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .article-detail__body__mid--text {
+        width: 70%;
+      }
+    }
+
+    .article-detail__quote {
+      margin-bottom: 1.5rem;
+      width: 100%;
+      font-style: italic;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative;
+
+      .article-detail__quote--left {
+        width: 5%;
+
+        p {
+          position: absolute;
+          top: 15%;
+          left: 0;
+          content: "“";
+          font-size: 8.125rem;
+          line-height: 1;
+          color: var(--color-highlight);
+          transform: scale(1.6);
+        }
+      }
+
+      .article-detail__quote--right {
+        width: 90%;
+
+        p {
+          color: var(--color-highlight);
+          font-size: 1.4rem;
+        }
+      }
+    }
+    h4 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-detail__body__bottom {
+      ul {
+        list-style: none;
+
+        li {
+          padding: 1rem 0;
+          font-size: 1.4rem;
+          color: var(--color-text);
+          font-weight: bold;
+
+          span {
+            color: var(--color-highlight);
+            margin-right: .8rem;
+          }
+        }
+      }
+    }
+  }
+}

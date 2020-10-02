@@ -1,0 +1,349 @@
+/*GLOBAL STYLES*/
+:root {
+  --color-oraBnge: #F6A64D;
+  --color-green: #8BA73B;
+  --color-highlight: rgb(139,167,59);
+  --color-text: #626262;
+  --color-border: #edecec;
+  --color-backcolor-icon: #f2f4ec;
+  --border: .1rem solid var(--color-border)
+}
+.highlight-text {
+  color: var(--color-highlight);
+}
+
+/*END GLOBAL STYLES*/
+
+.about-us__client--container {
+  margin-top: 3rem;
+  width: 100%;
+
+  .about-us__client__header {
+
+    .client__header--title {
+      width: 100%;
+
+      h1 {
+        text-align: center;
+        font-size: 3rem;
+      }
+    }
+
+    .client__header--paragraph {
+      width: 100%;
+      margin-top: 2rem;
+
+      p {
+        font-size: 1.6rem;
+        color: var(--color-text);
+        text-align: center;
+        padding: 0 34rem;
+      }
+    }
+  }
+
+  .about-us__client__article {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .client__article__img {
+      width: 42%;
+
+      img {
+        width: 84%;
+      }
+    }
+
+    .client__article__container {
+      width: 31%;
+
+      .article__content {
+        width: 100%;
+
+        .article__content--paragraph {
+          width: 100%;
+          p {
+            font-size: 2rem;
+            text-align: left;
+            color: var(--color-text);
+          }
+        }
+        .article__content--artist {
+          margin-top: 4rem;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          .content__artist--avatar {
+            display: inline-block;
+            background-color: #fff;
+            padding: {
+              top: .5rem;
+              right: .4rem;
+              bottom: 0;
+              left: .5rem;
+            }
+            margin-right: 1rem;
+            border-radius: 50%;
+            position: relative;
+
+            img {
+              width: 7.4rem;
+              height: 7.4rem;
+              border-radius: 50%;
+            }
+
+            .double__quote_style {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: var(--color-highlight);
+              width: 2.8rem;
+              height: 2.8rem;
+              border-radius: 50%;
+              color: #fff;
+            }
+          }
+        }
+
+        .content__artist--info {
+          .artist__info--name {
+            font-weight: bold;
+            font-size: 1.6rem;
+            text-align: left;
+          }
+
+          .artist__info--job {
+            color: var(--color-highlight);
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-us__client--container {
+
+    .about-us__client__header {
+
+      .client__header--title {
+
+
+        h1 {
+
+        }
+      }
+
+      .client__header--paragraph {
+
+        p {
+          padding: 0 28rem;
+        }
+      }
+    }
+
+    .about-us__client__article {
+
+
+      .client__article__img {
+
+
+        img {
+
+        }
+      }
+
+      .client__article__container {
+        width: 34%;
+
+        .article__content {
+
+
+          .article__content--paragraph {
+
+            p {
+
+            }
+          }
+          .article__content--artist {
+
+            .content__artist--avatar {
+
+              img {
+
+              }
+
+              .double__quote_style {
+
+              }
+            }
+          }
+
+          .content__artist--info {
+            .artist__info--name {
+
+            }
+
+            .artist__info--job {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-us__client--container {
+
+    .about-us__client__header {
+
+      .client__header--title {
+
+
+        h1 {
+
+        }
+      }
+
+      .client__header--paragraph {
+
+        p {
+          padding: 0 18rem;
+        }
+      }
+    }
+
+    .about-us__client__article {
+
+
+      .client__article__img {
+
+
+        img {
+
+        }
+      }
+
+      .client__article__container {
+        width: 38%;
+
+        .article__content {
+
+
+          .article__content--paragraph {
+
+            p {
+
+            }
+          }
+          .article__content--artist {
+
+            .content__artist--avatar {
+
+              img {
+
+              }
+
+              .double__quote_style {
+
+              }
+            }
+          }
+
+          .content__artist--info {
+            .artist__info--name {
+
+            }
+
+            .artist__info--job {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-us__client--container {
+
+    .about-us__client__header {
+
+      .client__header--title {
+
+
+        h1 {
+
+        }
+      }
+
+      .client__header--paragraph {
+
+        p {
+          padding: 0 8rem;
+        }
+      }
+    }
+
+    .about-us__client__article {
+
+
+      .client__article__img {
+
+
+        img {
+
+        }
+      }
+
+      .client__article__container {
+        width: 36%;
+
+        .article__content {
+
+
+          .article__content--paragraph {
+
+            p {
+
+            }
+          }
+          .article__content--artist {
+
+            .content__artist--avatar {
+
+              img {
+
+              }
+
+              .double__quote_style {
+
+              }
+            }
+          }
+
+          .content__artist--info {
+            .artist__info--name {
+
+            }
+
+            .artist__info--job {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

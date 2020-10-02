@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.7;
+  // < 1200: 56.25%
+  // 900: 50%
+  // > 1200: 75%
+}
+
+body {
+  background-color: #f2f4ec;
+  background-image: url("./assets/bg-body.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#root {
+  //max-width: 114rem;
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  #root {
+    width: 115rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #root {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #root {
+    position: relative;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+}

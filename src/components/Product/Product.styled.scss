@@ -1,0 +1,238 @@
+/*==== PRODUCT IMAGE ====*/
+.product {
+  //width: 36rem;
+  width: 22%;
+  //height: 78vh;
+  background-color: white;
+  padding: 2rem;
+
+  .product__image {
+    position: relative;
+    //height: 24rem;
+    //width: 32rem;
+    height: 25rem;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+
+    button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      //width: 20rem;
+      width: 100%;
+    }
+  }
+
+  .product__content {
+    width: 100%;
+
+    /*==== PRODUCT CATEGORY ====*/
+    .product__category {
+      margin-bottom: .5rem;
+      //height: 6vh;
+
+      a {
+        text-decoration: none;
+        color: #8ba73b;
+        font-size: 1.4rem;
+        font-style: italic;
+      }
+    }
+    /*====END PRODUCT CATEGORY ====*/
+    /*==== PRODUCT TITLE ====*/
+    .product__title {
+      height: 6rem;
+      margin-bottom: 1rem;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+    }
+    /*====END PRODUCT TITLE ====*/
+    /*====PRODUCT DESCRIPTION ====*/
+    .product__description {
+      display: none;
+    }
+    /*====END PRODUCT DESCRIPTION ====*/
+    /*==== PRODUCT PRICE ====*/
+    .product__price {
+      span {
+        display: block;
+        color: #8ba73b;
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+    }
+    /*====END PRODUCT PRICE ====*/
+    /*==== PRODUCT BUTTON ====*/
+    .product__action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+
+      .action__add {
+        button {
+          border: 2px solid #e9e7de;
+          background: none;
+          border-radius: 22px;
+          padding: 1rem 2rem;
+        }
+
+        button:hover {
+          border: 2px solid var(--color-highlight);
+          background-color: var(--color-highlight);
+          color: #fff;
+        }
+      }
+
+      .action__wish {
+        button {
+          background: #f2f4ec;
+          border: none;
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          padding: 1rem;
+        }
+      }
+
+      .action__wish {
+        img {
+          width: 2.1rem;
+          height: 2.1rem;
+        }
+      }
+    }
+    /*====END PRODUCT BUTTON ====*/
+  }
+}
+
+.product:hover {
+  .product__image {
+    button {
+      z-index: 2;
+      opacity: 1;
+      visibility: visible;
+      background-color:#2eb543;
+      width: 5rem;
+      height: 5rem;
+      color: white;
+      font-weight: bold;
+      border-radius: 4rem;
+      border: none;
+      transition: .2s;
+    }
+
+    img {
+      transform: scale(1.1);
+      transition: .6s;
+    }
+  }
+}
+
+.product__title a:hover {
+  text-decoration: underline;
+}
+
+.action__add {
+  button:hover {
+    cursor: pointer;
+    background-color: #8ba73b;
+    color: white;
+    transition: .5s;
+  }
+}
+
+.action__wish {
+  button:hover {
+    cursor: pointer;
+    background-color: #8ba73b;
+    transition: .5s;
+  }
+}
+
+.product__list {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .product__image {
+    width: 50%;
+
+    button {
+
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+
+  .product__content {
+
+
+    /*==== PRODUCT CATEGORY ====*/
+    .product__category {
+
+      a {
+
+      }
+    }
+    /*====END PRODUCT CATEGORY ====*/
+    /*==== PRODUCT TITLE ====*/
+    .product__title {
+      height: 13vh;
+      a {
+
+      }
+    }
+    /*====END PRODUCT TITLE ====*/
+    /*==== PRODUCT PRICE ====*/
+    .product__price {
+
+      span {
+
+      }
+    }
+    /*====END PRODUCT PRICE ====*/
+    /*==== PRODUCT BUTTON ====*/
+    .product__action {
+
+      .action__add {
+
+        button {
+
+        }
+      }
+
+      .action__wish {
+        button {
+
+        }
+      }
+
+      .action__wish {
+
+        img {
+
+        }
+      }
+    }
+    /*====END PRODUCT BUTTON ====*/
+  }
+}

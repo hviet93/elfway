@@ -1,0 +1,59 @@
+/*GLOBAL STYLES*/
+:root {
+  --color-oraBnge: #F6A64D;
+  --color-green: #8BA73B;
+  --color-highlight: rgb(139, 167, 59);
+  --color-text: #626262;
+  --color-border: #edecec;
+  --color-backcolor-icon: #f2f4ec;
+  --border: .1rem solid var(--color-border)
+}
+
+.highlight-text {
+  color: var(--color-highlight);
+}
+
+/*END GLOBAL STYLES*/
+
+.contact__header__container {
+  width: 100%;
+  margin-top: 2rem;
+
+  .contact__header__label {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    span {
+      font-size: 1.4rem;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 2rem;
+      border-radius: 5rem;
+    }
+
+    .contact__header__label--icon {
+      width: 6rem;
+      height: 3rem;
+    }
+
+    .contact__header__label--text {
+      color: var(--color-highlight);
+      width: 10rem;
+      height: 3rem;
+    }
+  }
+
+  .contact__header__title {
+    width: 100%;
+    padding: 1rem 0;
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
