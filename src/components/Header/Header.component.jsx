@@ -67,7 +67,8 @@ class Header extends React.Component {
     }
 
     renderProductCheckout = () => {
-        const cart = JSON.parse(window.localStorage.getItem('cart'));
+        let cart = JSON.parse(window.localStorage.getItem('cart'))
+            ? JSON.parse(window.localStorage.getItem('cart')) : this.props.cart;
 
         return cart.length > 0
             ? cart.map((cartProduct, idx) => {
