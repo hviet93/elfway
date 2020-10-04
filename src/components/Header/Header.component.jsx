@@ -22,7 +22,9 @@ class Header extends React.Component {
     // Mode 1: get price
     getTotalQuantityAndPrice = (mode) => {
         //const cart = this.props.cart;
-        const cart = JSON.parse(window.localStorage.getItem('cart'));
+        const cart = JSON.parse(window.localStorage.getItem('cart'))
+            ? JSON.parse(window.localStorage.getItem('cart'))
+            : this.props.cart;
 
         return mode === 0
             ? cart.reduce((total, product) => total + product.quantity, 0)
