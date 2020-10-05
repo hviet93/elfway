@@ -20,76 +20,70 @@ import supportImg from './../../assets/footer/support.png';
 import paymentImg from './../../assets/footer/payments.png';
 
 class Footer extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            footerGuaranteeData: [
+                {
+                    img: satisfactionImg,
+                    title: ['100%', 'Satisfaction'],
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore'
+                },
+                {
+                    img: saveMoneyImg,
+                    title: ['Save 20%%', 'when you'],
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore'
+                },
+                {
+                    img: fastShippingImg,
+                    title: ['Fast Free%', 'Shipment'],
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore'
+                },
+                {
+                    img: moneyBackImg,
+                    title: ['14-Day', 'Money Back'],
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore'
+                }
+            ]
+        }
+    }
 
     style = {
         //backgroundImage: footerBackgroundImg,
         backgroundColor: '#fff'
     }
 
+    renderFooterGuarantee = () => {
+        const {footerGuaranteeData} = this.state;
+
+        return footerGuaranteeData.map((g, idx) => {
+            return (
+                <div className="guarantee__block" key={idx}>
+                    <div className="guarantee__block__header">
+                        <div className="block__header__img">
+                            <img src={g.img} alt={`Guarantee ${idx}`}/>
+                        </div>
+                        <div className="block__header__title">
+                            {
+                                g.title.map((t, idxT) => {
+                                    return <span key={idxT}>{t}</span>
+                                })
+                            }
+                        </div>
+                    </div>
+                    <div className="guarantee__block__body">
+                        <p>{g.content}</p>
+                    </div>
+                </div>
+            )
+        })
+    }
+
     render() {
         return(
             <div className="footer" style={this.style}>
                 <div className="footer__guarantee">
-                    <div className="guarantee__block">
-                        <div className="block__title">
-                            <div className="block__title--img">
-                                <img src={satisfactionImg} alt="satisfaction"/>
-                            </div>
-                            <div className="block__title-name">
-                                <span>100%</span>
-                                <span>Satisfaction</span>
-                            </div>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore
-                        </p>
-                    </div>
-                    <div className="guarantee__block">
-                        <div className="block__title">
-                            <div className="block__title--img">
-                                <img src={saveMoneyImg} alt="save money"/>
-                            </div>
-                            <div className="block__title-name">
-                                <span>Save 20%</span>
-                                <span>when you</span>
-                            </div>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore
-                        </p>
-                    </div>
-                    <div className="guarantee__block">
-                        <div className="block__title">
-                            <div className="block__title--img">
-                                <img src={fastShippingImg} alt="fast shipping"/>
-                            </div>
-                            <div className="block__title-name">
-                                <span>Fast Free</span>
-                                <span>Shipment</span>
-                            </div>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore
-                        </p>
-                    </div>
-                    <div className="guarantee__block">
-                        <div className="block__title">
-                            <div className="block__title--img">
-                                <img src={moneyBackImg} alt="money back"/>
-                            </div>
-                            <div className="block__title-name">
-                                <span>14-Day</span>
-                                <span>Money Back</span>
-                            </div>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore
-                        </p>
-                    </div>
+                    {this.renderFooterGuarantee()}
                 </div>
                 <div className="footer__newsletter">
                     <div className="newsletter__block">

@@ -22,10 +22,10 @@ html {
   /* height: 100vh; */
   width: 100%;
   padding: 0 1.5rem;
-  display: grid;
-  grid-row-gap: 1rem;
-  grid-template-rows: repeat(auto-fit, minmax(100%, 1fr));
   margin-top: 3rem;
+  /*display: grid;
+  grid-row-gap: 1rem;
+  grid-template-rows: repeat(auto-fit, minmax(100%, 1fr));*/
 }
 
 /*================ Guarantee SECTION ======================*/
@@ -34,14 +34,50 @@ html {
   width: 100%;
   padding: 7.5rem 3rem;
   border-bottom: 1px solid #ededed;
-  display: grid;
+  /*display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-}
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));*/
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 
-.guarantee__block {
-  /* margin-right: 15px; */
-  /* height: 20%; */
+  .guarantee__block {
+    width: 25%;
+
+    .guarantee__block__header {
+      width: 100%;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .block__header__img {
+        width: 25%;
+
+        img {
+          width: 100%;
+        }
+      }
+      .block__header__title {
+        width: 65%;
+
+        span {
+          display: block;
+          font-size: 1.6rem;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .guarantee__block__body {
+      width: 100%;
+
+      p {
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
 }
 
 .guarantee__block:hover span {
@@ -317,11 +353,36 @@ html {
 @media screen and (max-width: 1120px) {
   /*guarantee*/
   .footer__guarantee {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    //grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
 }
 
 @media screen and (max-width: 992px) {
+
+  .footer {
+    margin-top: 40rem;
+
+    .footer__guarantee {
+      flex-wrap: wrap;
+
+      .guarantee__block {
+        width: 40%;
+        margin-bottom: 2rem;
+
+        .guarantee__block__header {
+
+          .block__header__img {
+            width: 20%;
+          }
+
+          .block__header__title {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+
   /*Information*/
   .footer__information {
     grid-template-columns: repeat(2, 1fr);
