@@ -11,7 +11,10 @@ import {addWishList} from '../../redux/wishlist/wishlist.action';
 const Product = (props) => {
 
     const addProductCart = (product) => {
-        let {cart} = props;
+        //let {cart} = props;
+        let cart = window.localStorage.getItem('cart')
+            ?  JSON.parse(window.localStorage.getItem('cart'))
+            : props.cart;
         let productNotExist = true;
         cart = cart.map(productCart => {
             if(productCart.product.id === product.id) {
@@ -29,6 +32,7 @@ const Product = (props) => {
         }
 
         props.dispatch(addCart(cart));
+        window.localStorage.setItem('cart', JSON.stringify(cart));
     }
 
     const addProductWishList = (product) => {
@@ -81,7 +85,7 @@ const Product = (props) => {
 }
 
 const mapStateToProp = state => {
-    window.localStorage.setItem('cart', JSON.stringify(state.cart));
+    //window.localStorage.setItem('cart', JSON.stringify(state.cart));
 
     return {
         cart: state.cart,
