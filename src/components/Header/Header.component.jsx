@@ -166,7 +166,10 @@ class Header extends React.Component {
                                     <Link to="#">
                                         <i className="fas fa-cart-plus icon-style"/>
                                     </Link>
-                                    <div className="cart__checkout_container">
+                                    <div className="cart__checkout__container">
+                                        <div className="cart__checkout__header">
+                                            <h1>Cart</h1>
+                                        </div>
                                         {this.renderProductCheckout()}
                                         <div className="cart__product__total">
                                             <div className="cart__product__total--label">
