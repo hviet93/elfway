@@ -49,6 +49,22 @@ class FeatureProducts extends React.Component {
                     price: 150.52,
                     category: "BAKERY"
                 },
+                {
+                    id: 5,
+                    name: 'Tipco 100% Fruit Juice Tangerine Orange Juice',
+                    description: '',
+                    image: organicProduct_4,
+                    price: 150.52,
+                    category: "FRUITS"
+                },
+                {
+                    id: 6,
+                    name: 'Waitrose Candy Crunch Seedless Grapes400g',
+                    description: '',
+                    image: organicProduct_3,
+                    price: 171.16,
+                    category: 'FRUITS'
+                },
             ],
             currentTab: 'organic'
         }
